@@ -6,26 +6,46 @@
     <link rel="icon" type="image/x-icon" href="assets/chevron.png"
 </head>
 <body>
+<!----------- taskbar ------------->
+    <div class="taskbar">
+        <details>
+            <summary class="start-button">
+                <img src="assets/windows95_16.png" width="16" height="16" alt=""> Start
+            </summary>
+            <nav class="start-menu">
+                <ul class="icon-list">
 
-    <div class="constructionDiv">
-        <img src="assets/underconstruction.gif">
+                </ul>
+            </nav>
+        </details>
+        <div class="taskband-button">Under Construction</div>
     </div>
+<!----------- container ------------->
     <div class="center-container">
+<!----------- window ------------->
         <div class="window">
+<!----------- title ------------->
             <div class="title-bar">
                 <div class="title-bar-text">Blog</div>
             </div>
             <div class="window-body">
-                <nav class="nav-icons">
-                    <a class="nav-icon" href="index.html">
+<!----------- nav bar ------------->
+                <nav class="navigation-icons">
+                    <a class="navigation-icon" href="index.html">
                         <img src="assets/home.png">
                         <span>Home</span>
                     </a>
                     <vr></vr>
-                    <a class="nav-icon" href="blog.html">
+                    <a class="navigation-icon" href="blog.html">
                         <img src="assets/blog.png">
                         <span>Blog</span>
                     </a>
+                    <a class="navigation-icon" href="gallery.html">
+                        <img src="assets/gallery.png">
+                        <span>Gallery</span>
+                    </a>
+                    <vr></vr>
+                    <img src="assets/underconstruction.gif" align="right">
                 </nav>
                 <div>
                     <div class="document-container">
@@ -33,55 +53,62 @@
                             <div class="inset">
                                 <div class="document">
                                     <div class="document-content">
-                                        <h1 id="welcome-to-chocolate-monkey-motors">Welcome to the Chocolate Monkey Motors blog</h1>
-                                        <h2 id="guides">Temporary Text</h2>
-                                        <p>
-                                            <a class="home-shortcut" href="blog.html">
-                                                <img src="assets/blog.png" style="float: left;">
-                                                <span>Quick Links</span>
-                                                <span>For right now this is just a test button, but eventually it will have a function!</span>
-                                            </a>
-                                        </p>
-                                        <div class="row">
-                                            <div class="leftcolumn">
-                                              <div class="card">
-                                                <h2>TITLE HEADING</h2>
-                                                <h5>Title description, Dec 7, 2017</h5>
-                                                <div class="fakeimg" style="height:200px;">Image</div>
-                                                <p>Some text..</p>
-                                              </div>
-                                              <div class="card">
-                                                <h2>TITLE HEADING</h2>
-                                                <h5>Title description, Sep 2, 2017</h5>
-                                                <div class="fakeimg" style="height:200px;">Image</div>
-                                                <p>Some text..</p>
-                                              </div>
-                                            </div>
-                                            <div class="rightcolumn">
-                                              <div class="card">
-                                                <h2>About Me</h2>
-                                                <div class="fakeimg" style="height:100px;">Image</div>
-                                                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                                              </div>
-                                              <div class="card">
-                                                <h3>Popular Post</h3>
-                                                <div class="fakeimg">Image</div><br>
-                                                <div class="fakeimg">Image</div><br>
-                                                <div class="fakeimg">Image</div>
-                                              </div>
-                                              <div class="card">
-                                                <h3>Follow Me</h3>
-                                                <p>Some text..</p>
-                                              </div>
-                                            </div>
-                                          </div>
+                                        <h1 id="welcome-to-chocolate-monkey-motors">Welcome to the Chocolate Monkey Motors Blog</h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="sidebar-cell">
+                            <img src="assets/cmm_web.png">
+                            <b style="margin-bottom:4px;">Table of contents</b>
+                            <div class="sidebar-container">
+                                <ul class="tree-view">
+                                    <li>
+                                        <a href="#2023.10.11">10 November 2023</a>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>
+                                                <a href="#tweaks">Tweaks and Additional Software</a>
+                                            </summary>
+                                            <ul>
+                                                <li>
+                                                    <a href="#startmenus">Start Menus</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#taskbars">Taskbars</a>
+                                                 </li>
+                                                <li>
+                                                     <a href="#borders">3D Borders</a>
+                                                 </li>
+                                                <li>
+                                                      <a href="#remove-address-bar">Remove Address Bar</a>
+                                                 </li>
+                                                <li>
+                                                      <a href="#alt-address-bar">Alternative Address Bar</a>
+                                                    </li>      
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <a href="#issues">Issues and Workarounds</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <footer class="status-bar"></footer>
+                <footer class="statusbar">
+                    <span id="lastUpdate" class="statusbar-box"></span>
+                    <script>
+                        const date = new Date(document.lastModified);
+                        const lastUpdate = new Intl.DateTimeFormat('en-GB', {
+                            dateStyle:"medium",
+                            timeStyle:"medium",
+                        }).format(date);
+                        document.getElementById("lastUpdate").innerHTML = "Page last updated " + lastUpdate;
+                    </script>
+                </footer>
             </div>
         </div>
     </div>
