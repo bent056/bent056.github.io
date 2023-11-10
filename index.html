@@ -22,15 +22,44 @@
                         <span>Home</span>
                     </a>
                     <vr></vr>
-                    <a class="nav-icon href="content/blog.html">
+                    <a class="nav-icon" href="blog.html">
                         <img src="assets/blog.png">
                         <span>Blog</span>
                     </a>
                 </nav>
                 <div>
-
+                    <div class="document-container">
+                        <div class="document-cell">
+                            <div class="inset">
+                                <div class="document">
+                                    <div class="document-content">
+                                        <h1 id="welcome-to-chocolate-monkey-motors">Welcome to Chocolate Monkey Motors</h1>
+                                        <h2 id="guides">Temporary Text</h2>
+                                        <p>
+                                            <a class="home-shortcut" href="blog.html">
+                                                <img src="assets/blog.png" style="float: left;">
+                                                <span>Quick Links</span>
+                                                <span>For right now this is just a test button, but eventually it will have a function!</span>
+                                            </a>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <footer class="status-bar"></footer>
+                <footer class="status-bar"> 
+                    <span id="lastUpdate" class="statusbar-box"></span>
+                    <script>
+                        const date = new Date(document.lastModified);
+                        const lastUpdate = new Intl.DateTimeFormat('en-GB', {
+                            dateStyle:"medium",
+                            timeStyle:"medium",
+                        }).format(date);
+                        document.getElementById("lastUpdate").innerHTML = "Page last updated " + lastUpdate;
+                    </script>
+                </footer>
             </div>
         </div>
     </div>

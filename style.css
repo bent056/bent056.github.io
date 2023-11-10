@@ -4,9 +4,36 @@ body {
   }
   
   h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+  .document h1 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+.document h2 {
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.document h1, .document h2, .document h3, .document h4, .document h5, .document h6 {
+    font-family: 'Arial', sans-serif;
+}
 
 div {
   display: block;
@@ -17,6 +44,8 @@ vr {
   border-right: 1px solid #fff;
   margin: 2px 3px;
 }
+
+
 
 .constructionDiv {
   display: flex;
@@ -91,8 +120,74 @@ a:visited {
   color: purple;
 }
 
+.home-shortcut span:first-of-type {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.home-shortcut span {
+  display: block;
+}
+.home-shortcut img {
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+}
+.home-shortcut {
+  box-shadow: inset -1px -1px #000, inset 1px 1px silver, inset -2px -2px gray, inset 2px 2px #fff;
+  background: silver;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  min-width: 75px;
+  min-height: 23px;
+  padding: 0 12px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "MS Sans Serif",sans-serif;
+  font-size: 8pt;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  min-height: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.document-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1px;
+}
+.document-cell {
+  width: 100%;
+}
+.inset {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px gray, inset -2px -2px silver, inset 2px 2px #000;
+  border: none;
+  margin: 0;
+  background: #fff;
+  padding: 2px;
+}
+.document {
+  overflow: auto;
+}
+.document {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10pt;
+}
+.document-content {
+  padding: 10px;
+  padding-block-start: 8px;
+  max-height: calc(100vh - 173px);
+}
+
 
 .status-bar {
   padding: 1px;
   display: flex;
+}
+.statusbar-box {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px gray;
+  padding: 4px;
+  width: 100%;
 }
