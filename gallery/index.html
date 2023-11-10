@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>-CMM Blog-</title>
+    <title>cmm - chocolate monkey motors</title>
     <link rel="icon" type="image/x-icon" href="assets/chevron.png"
 </head>
 <body>
@@ -26,7 +26,7 @@
         <div class="window">
 <!----------- title ------------->
             <div class="title-bar">
-                <div class="title-bar-text">Blog</div>
+                <div class="title-bar-text">Gallery</div>
             </div>
             <div class="window-body">
 <!----------- nav bar ------------->
@@ -40,7 +40,7 @@
                         <img src="assets/blog.png">
                         <span>Blog</span>
                     </a>
-                    <a class="navigation-icon" href="/gallery/">
+                    <a class="navigation-icon" href="gallery.html">
                         <img src="assets/gallery.png">
                         <span>Gallery</span>
                     </a>
@@ -53,7 +53,16 @@
                             <div class="inset">
                                 <div class="document">
                                     <div class="document-content">
-                                        <h1 id="welcome-to-chocolate-monkey-motors">Welcome to the Chocolate Monkey Motors Blog</h1>
+                                        <h1 id="welcome-to-chocolate-monkey-motors">Welcome to the Gallery</h1>
+                                        <h2 id="guides">Temporary Text</h2>
+                                        <p>
+                                            <a class="home-shortcut" href="/gallery/detailing.html">
+                                                <img src="assets/detailing.png" style="float: left;">
+                                                <span>Detailing</span>
+                                                <span>Take a look at some of our work!</span>
+                                            </a>
+                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -98,8 +107,8 @@
                         </div>
                     </div>
                 </div>
-                <footer class="statusbar">
-                    <span id="lastUpdate" class="statusbar-box"></span>
+                <footer class="statusbar"> 
+                    <span id="lastUpdate" class="statusbar-box">Page last updated 10 Nov 2023, 05:10:13</span>
                     <script>
                         const date = new Date(document.lastModified);
                         const lastUpdate = new Intl.DateTimeFormat('en-GB', {
