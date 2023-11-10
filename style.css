@@ -1,5 +1,7 @@
 body {
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
+    background-image: url('assets/backgroundtile.png');
+    font-family: "Meiryo",Osaka,Verdana,Arial,Helvetica,sans-serif;
   }
   
   h1 {
@@ -8,6 +10,68 @@ body {
   }
 
 div {
+  display: block;
+  justify-content: center;
+}
+
+.constructionDiv {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.center-container {
+  height: 600px;
+  max-height: 100%;
+  margin: auto;
+}
+
+.window {
+  box-shadow: inset -1px -1px #000, inset 1px 1px silver, inset -2px -2px gray, inset 2px 2px #fff;
+  font-size: 11px;
+  background: silver;
+  padding: 3px;
+  max-width: 12in;
+  margin: 0 auto;
+}
+
+.title-bar {
+  font-size: 11px;
+  background: linear-gradient(90deg, navy, #1084d0);
+  padding: 3px 2px 3px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar-text {
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0;
+  margin-right: 24px;
+}
+
+.window-body {
+  margin: 1px;
+}
+
+.nav-icons {
+  display: flex;
+  padding: 2px;
+}
+
+.navigation-icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 50px;
+  min-height: 36px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.status-bar {
+  padding: 1px;
+  display: flex;
 }
