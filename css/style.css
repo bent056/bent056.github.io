@@ -13,6 +13,11 @@ div {
   display: block;
   justify-content: center;
 }
+vr {
+  border-left: 1px solid gray;
+  border-right: 1px solid #fff;
+  margin: 2px 3px;
+}
 
 .constructionDiv {
   display: flex;
@@ -34,6 +39,7 @@ div {
   padding: 3px;
   max-width: 12in;
   margin: 0 auto;
+  
 }
 
 .title-bar {
@@ -60,8 +66,11 @@ div {
   display: flex;
   padding: 2px;
 }
-
-.navigation-icon {
+.nav-icons a, .nav-icons a:link {
+  color: #000;
+  text-decoration: none;
+}
+.nav-icon {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -70,6 +79,19 @@ div {
   padding: 4px;
   cursor: pointer;
 }
+.nav-icon img {
+  image-rendering: crisp-edges;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto 4px auto;
+}
+.navigation-icon:not(:hover) img {
+  filter: grayscale(1);
+}
+a:visited {
+  color: purple;
+}
+
 
 .status-bar {
   padding: 1px;
