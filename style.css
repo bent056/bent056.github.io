@@ -1,5 +1,37 @@
-.img {
-    box-shadow: inset -1px -1px #000, inset 1px 1px silver, inset -2px -2px gray, inset 2px 2px #fff;
+div.gallery:hover {
+    box-shadow: inset -1px -1px #000,inset 1px 1px #fff
+}
+div.gallery:active {
+    box-shadow: inset -1px -1px #fff,inset 1px 1px gray
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 tbody {
