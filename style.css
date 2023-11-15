@@ -1,3 +1,7 @@
+.img {
+    box-shadow: inset -1px -1px #000, inset 1px 1px silver, inset -2px -2px gray, inset 2px 2px #fff;
+}
+
 tbody {
     display: table-row-group;
     vertical-align: middle;
@@ -1245,7 +1249,7 @@ script {
     font-family: "MS Sans Serif",sans-serif;
     font-size: 8pt;
     background-color: silver;
-    background-image: url("/assets/ico/disk_download_16.png");
+    background-image: url("assets/downloadbutton.png");
     background-repeat: no-repeat;
     background-position: 3px 3px;
     box-sizing: border-box;
