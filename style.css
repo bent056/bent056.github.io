@@ -1,7 +1,7 @@
-div.gallery:hover {
+div.gallery img:hover {
     box-shadow: inset -1px -1px #000,inset 1px 1px #fff
 }
-div.gallery:active {
+div.gallery img:active {
     box-shadow: inset -1px -1px #fff,inset 1px 1px gray
 }
   
