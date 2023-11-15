@@ -1,9 +1,16 @@
-img {
+div.gallery:hover {
+    box-shadow: inset -1px -1px #000,inset 1px 1px #fff
+}
+div.gallery:active {
+    box-shadow: inset -1px -1px #fff,inset 1px 1px gray
+}
+  
+div.gallery img {
     width: 200px;
     height: 200px;
-    padding: 3px;
+    object-fit: cover;
+    padding: 5px;
 }
-
 
 tbody {
     display: table-row-group;
