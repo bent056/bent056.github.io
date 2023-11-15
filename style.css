@@ -1,11 +1,3 @@
-div.gallery:hover {
-    box-shadow: inset -1px -1px #000,inset 1px 1px #fff
-}
-div.gallery:active {
-    box-shadow: inset -1px -1px #fff,inset 1px 1px gray
-}
-
-
 tbody {
     display: table-row-group;
     vertical-align: middle;
