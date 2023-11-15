@@ -4,12 +4,7 @@ div.gallery:hover {
 div.gallery:active {
     box-shadow: inset -1px -1px #fff,inset 1px 1px gray
 }
-div.gallery img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    padding: 3px;
-}
+
 
 tbody {
     display: table-row-group;
