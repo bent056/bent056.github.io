@@ -9,6 +9,7 @@ div.gallery img {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    float: left;
 }
 .responsive {
     padding: 0 6px;
