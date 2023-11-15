@@ -6,17 +6,13 @@ div.gallery:active {
 }
   
 div.gallery img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;  
     float: left;
+    padding: 2px;
 }
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-  
+
 .clearfix:after {
     content: "";
     display: table;
