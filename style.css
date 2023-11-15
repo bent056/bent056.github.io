@@ -8,8 +8,7 @@ div.gallery:active {
 div.gallery img {
     width: 250px;
     height: 250px;
-    object-fit: cover;  
-    float: left;
+    object-fit: cover;
     padding: 5px;
 }
 
