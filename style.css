@@ -35,6 +35,13 @@ table {
     padding-left: 55px;
     padding-top: 5px;
 }
+.centerDiv:hover {
+    box-shadow: inset -1px -1px #000,inset 1px 1px #fff
+}
+
+.centerDiv:active {
+    box-shadow: inset -1px -1px #fff,inset 1px 1px gray
+}
 
 .header{
     background-color: gray;
