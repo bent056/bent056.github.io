@@ -8,9 +8,8 @@ div.gallery:active {
 div.gallery img {
     width: 250px;
     height: 250px;
-    object-fit: cover;  
-    float: left;
     padding: 2px;
+    float: left;
 }
 
 .clearfix:after {
