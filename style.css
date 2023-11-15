@@ -6,9 +6,9 @@ div.gallery:active {
 }
   
 div.gallery img {
-    width: 300px;
-    height: 300px;
-    display: inline;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 .responsive {
     padding: 0 6px;
